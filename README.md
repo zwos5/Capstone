@@ -23,6 +23,7 @@ Executable file coming soon.
 After installation, Zeta should function just like any of the more popular browsers.  Running Zeta will load the sample homepage, after the page has loaded navigate to whatever site you wish. 
 
 ## Maintainers
-@zwos5
+[@zwos5](https://github.com/zwos5)
 
 ## License
+MIT License 
