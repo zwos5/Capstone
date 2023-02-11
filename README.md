@@ -1,5 +1,5 @@
 # Zeta Browser
-A web browser designed to feel private to the individual user.  
+A web browser designed to have a feel of legitimate privacy.  
 
 ## Table of Contents
 1. Background
