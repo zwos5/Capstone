@@ -1,0 +1,9 @@
+Results of the run test: 
+3 tests passed
+2 tests failed
+
+Percentage of tests passed: 
+60.0%
+
+Percentage of tests failed: 
+40.0%
