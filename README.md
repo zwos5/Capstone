@@ -12,7 +12,7 @@ A web browser designed to have a feel of legitimate privacy.
 This program was created in 2023 and serves the purpose of being a browser with the feel of a big popular browser but in a small browser package.
 
 ## Install
-If you choose to run this program through the source code, make sure to have Python version 3.11 installed from the official [Python Website](https://www.python.org/downloads/).  After installing Python, navigate to either to your IDE or Mac terminal or a Command Prompt on Windows and type the following commands.
+If you choose to run this program through the source code, make sure to have Python version 3.11 installed from the official [Python Website](https://www.python.org/downloads/).  After installing Python, navigate to either your IDE or Mac terminal or a Command Prompt on Windows and type the following commands.
 
 - pip install PyQt5
 - pip install PyQtWebEngine
