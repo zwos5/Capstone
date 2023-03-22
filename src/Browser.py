@@ -89,7 +89,7 @@ class MainWindow(QMainWindow):
 		#	os.path.dirname(__file__), "dark_mode.css")))
 
 		self.bookmarks = bkmrk_import("bookmarks.txt")
-		self.favourites = fav_import("favorites.txt")
+		self.favorites = fav_import("favorites.txt")
 
 		self.addbookmarkBtn = QToolButton(self)
 		self.addbookmarkBtn.setIcon(QIcon(os.path.join('Icons', 'bookmarks.jpg')))
