@@ -1,2 +1,1 @@
-This file will serve to store my diagrams relating to my capstone project:
-Diagrams coming soon.
+This file will serve to store my diagrams relating to my capstone project.
