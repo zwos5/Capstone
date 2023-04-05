@@ -16,7 +16,7 @@ If you choose to run this program through the source code, make sure to have Pyt
 
 `- pip install PyQt5
 `
-`\n- pip install PyQtWebEngine
+`- pip install PyQtWebEngine
 `
 
 
