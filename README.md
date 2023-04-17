@@ -26,4 +26,4 @@ After installation, Zeta should function just like any of the more popular brows
 [@zwos5](https://github.com/zwos5)
 
 ## License
-MIT License 
+[MIT License](https://github.com/zwos5/Zeta-Browser/blob/main/LICENSE) © Brandon Zwosta
