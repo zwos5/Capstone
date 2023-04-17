@@ -12,7 +12,7 @@ A web browser by one person not by a large company.
 This program was created in 2023 and serves the purpose of being a browser with the feel of a big popular browser but in a small browser package.
 
 ## Install
-If you choose to run this program through the source code, make sure to have Python version 3.11 installed from the official [Python Website](https://www.python.org/downloads/).  After installing Python, navigate to either your IDE/Mac/Linux terminal or a Command Prompt on Windows and type the following commands.
+To run this program through the source code, make sure to have Python version 3.11 installed from the official [Python Website](https://www.python.org/downloads/).  After installing Python, navigate to either your IDE/Mac/Linux terminal or a Command Prompt on Windows and type the following commands.
 
 `- pip install PyQt5
 `
