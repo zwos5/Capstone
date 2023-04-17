@@ -1,1 +1,0 @@
-This folder is going to store any testing material related to the PyAutoGui automation testing.

@@ -76,8 +76,7 @@ class MainWindow(QMainWindow):
 		navtb.addAction(stop_btn) 
 	
 		# Initial tab 
-		self.add_new_tab(QUrl.fromLocalFile(os.path.abspath(os.path.join(
-			os.path.dirname(__file__), "sample_homepage.html")))) 
+		self.add_new_tab(QUrl('https://www.nsuok.edu')) 
 
 		self.show() 
 		self.setWindowTitle("Zeta Browser") 
@@ -89,7 +88,7 @@ class MainWindow(QMainWindow):
 		#	os.path.dirname(__file__), "dark_mode.css")))
 
 		self.bookmarks = bkmrk_import("bookmarks.txt")
-		self.favorites = fav_import("favorites.txt")
+		self.favourites = fav_import("favorites.txt")
 
 		self.addbookmarkBtn = QToolButton(self)
 		self.addbookmarkBtn.setIcon(QIcon(os.path.join('Icons', 'bookmarks.jpg')))
@@ -147,8 +146,7 @@ class MainWindow(QMainWindow):
 
 	def add_new_tab(self, qurl = None, label ="Blank"): 
 		if qurl is None: 
-			qurl = QUrl.fromLocalFile(os.path.abspath(os.path.join(
-			os.path.dirname(__file__), "sample_homepage.html"))) 
+			qurl = QUrl('https://www.nsuok.edu') 
 
 		browser = QWebEngineView() 
 		browser.setUrl(qurl) 
@@ -183,8 +181,7 @@ class MainWindow(QMainWindow):
 		self.setWindowTitle("% s - Zeta Browser" % title) 
 
 	def navigate_home(self): 
-		self.tabs.currentWidget().setUrl(QUrl.fromLocalFile(os.path.abspath(os.path.join(
-			os.path.dirname(__file__), "sample_homepage.html")))) 
+		self.tabs.currentWidget().setUrl(QUrl('https://www.nsuok.edu')) 
 
 	def navigate_to_url(self): 
 		q = QUrl(self.urlbar.text()) 

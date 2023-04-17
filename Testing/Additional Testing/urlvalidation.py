@@ -12,6 +12,3 @@ if(cont == "Yes" or cont == "yes" or cont == "Y" or cont == "y"):
     fft.fromFile()
 else:
     fft.goodbyeMessage()
-
-
-print("Made by: Brandon Zwosta")

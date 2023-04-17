@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-time.sleep(2)
 buttons = ['samplepage_home.png', 'about.png', 'purpose.png']
 for button in buttons:
     print(f'click on {button}')
