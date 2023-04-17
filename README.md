@@ -19,11 +19,8 @@ If you choose to run this program through the source code, make sure to have Pyt
 `- pip install PyQtWebEngine
 `
 
-
-Executable file coming soon.
-
 ## Usage
-After installation, Zeta should function just like any of the more popular browsers.  Running Zeta will load the sample homepage, after the page has loaded navigate to whatever site you wish. 
+After installation, Zeta should function just like any of the more popular browsers.  Running Zeta will load the set homepage, after the page has loaded navigate to whatever site you wish. 
 
 ## Maintainers
 [@zwos5](https://github.com/zwos5)
