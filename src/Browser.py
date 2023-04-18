@@ -88,7 +88,7 @@ class MainWindow(QMainWindow):
 		#	os.path.dirname(__file__), "dark_mode.css")))
 
 		self.bookmarks = bkmrk_import("bookmarks.txt")
-		self.favourites = fav_import("favorites.txt")
+		self.favorites = fav_import("favorites.txt")
 
 		self.addbookmarkBtn = QToolButton(self)
 		self.addbookmarkBtn.setIcon(QIcon(os.path.join('Icons', 'bookmarks.jpg')))
@@ -138,7 +138,7 @@ class MainWindow(QMainWindow):
 	def managebookmarks(self):
 		dialog = QDialog(self)
 		bmk_dialog = Bookmarks_Dialog()
-		bmk_dialog.set_ui(dialog, self.bookmarks, self.favourites)
+		bmk_dialog.set_ui(dialog, self.bookmarks, self.favorites)
        
 		bmk_dialog.bookmarks_table.doubleclicked.connect(self.GoTo)
 
