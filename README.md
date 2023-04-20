@@ -16,6 +16,7 @@ To run this program through the source code, make sure to have Python version 3.
 
 `- pip install PyQt5
 `
+
 `- pip install PyQtWebEngine
 `
 
