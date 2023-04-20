@@ -18,6 +18,7 @@ To run this program through the source code, make sure to have Python version 3.
 `
 `- pip install PyQtWebEngine
 `
+If you happen to be missing the pip command, install pip [here](https://pypi.org/project/pip).
 
 ## Usage
 After installation, Zeta should function just like any of the more popular browsers.  Running Zeta will load the set homepage, after the page has loaded navigate to whatever site you wish. 
