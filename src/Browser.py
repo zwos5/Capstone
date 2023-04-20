@@ -33,25 +33,25 @@ class ZetaBrowser(QMainWindow):
 
         	# Buttons QIcon(os.path.join('icons', 'name.png')), "Back" (icon format insertion for future)
 		back_button = QAction(QIcon(os.path.join('Icons', 'Back.jpg')), "Back", self) 
-		back_button.setStatusTip("Go back to your previous page")
+		back_button.setStatusTip("Go back to your previous page\n         [Ctrl+P]")
 		back_button.setShortcut("Ctrl+P") 
 		back_button.triggered.connect(lambda: self.tabs.currentWidget().back()) 
 		navtb.addAction(back_button) 
 
 		next_button = QAction(QIcon(os.path.join('Icons', 'Forward.jpg')),"Forward", self) 
-		next_button.setStatusTip("Go forward to your next page")
+		next_button.setStatusTip("Go forward to your next page\n         [Ctrl+N]")
 		next_button.setShortcut("Ctrl+N")  
 		next_button.triggered.connect(lambda: self.tabs.currentWidget().forward()) 
 		navtb.addAction(next_button) 
 
 		reload_button = QAction(QIcon(os.path.join('Icons', 'Reload.jpg')),"Reload", self) 
-		reload_button.setStatusTip("Reload the page")
+		reload_button.setStatusTip("Reload the page\n         [Ctrl+R]")
 		reload_button.setShortcut("Ctrl+R")  
 		reload_button.triggered.connect(lambda: self.tabs.currentWidget().reload()) 
 		navtb.addAction(reload_button) 
 
 		home_button = QAction(QIcon(os.path.join('Icons', 'Home.jpg')),"Home", self) 
-		home_button.setStatusTip("Go to your homepage") 
+		home_button.setStatusTip("Go to your homepage\n         [Ctrl+H]") 
 		home_button.setShortcut("Ctrl+H") 
 		home_button.triggered.connect(self.navigate_home) 
 		navtb.addAction(home_button) 
@@ -70,7 +70,7 @@ class ZetaBrowser(QMainWindow):
 		navtb.addWidget(self.urlbar) 
 
 		stop_btn = QAction("Stop", self) 
-		stop_btn.setStatusTip("Stop loading current page")
+		stop_btn.setStatusTip("Stop loading current page\n         [Ctrl+T]")
 		stop_btn.setShortcut("Ctrl+T")  
 		stop_btn.triggered.connect(lambda: self.tabs.currentWidget().stop()) 
 		navtb.addAction(stop_btn) 
@@ -92,7 +92,7 @@ class ZetaBrowser(QMainWindow):
 
 		self.addbookmarkBtn = QToolButton(self)
 		self.addbookmarkBtn.setIcon(QIcon(os.path.join('Icons', 'bookmarks.jpg')))
-		self.addbookmarkBtn.setToolTip("Add Bookmark")
+		self.addbookmarkBtn.setToolTip("Add Bookmark\n         [Ctrl+B]")
 		self.addbookmarkBtn.setShortcut("Ctrl+B")        
 		navtb.addWidget(self.addbookmarkBtn)
 		self.addbookmarkBtn.clicked.connect(self.addbookmark)
