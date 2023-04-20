@@ -8,10 +8,10 @@ from PyQt5.QtPrintSupport import *
 from managebkmrks import Bookmarks_Dialog, Add_Bookmark_Dialog, dir_icons
 from bookmark_ie import *
 
-class MainWindow(QMainWindow): 
+class ZetaBrowser(QMainWindow): 
 
 	def __init__(self, *args, **kwargs): 
-		super(MainWindow, self).__init__(*args, **kwargs) 
+		super(ZetaBrowser, self).__init__(*args, **kwargs) 
 
 		self.tabs = QTabWidget() 
 		self.tabs.setDocumentMode(True) 
@@ -31,7 +31,7 @@ class MainWindow(QMainWindow):
 
 		self.addToolBar(navtb) 
 
-        # Buttons QIcon(os.path.join('icons', 'name.png')), "Back" (icon format insertion for future)
+        	# Buttons QIcon(os.path.join('icons', 'name.png')), "Back" (icon format insertion for future)
 		back_button = QAction(QIcon(os.path.join('Icons', 'Back.jpg')), "Back", self) 
 		back_button.setStatusTip("Go back to your previous page")
 		back_button.setShortcut("Ctrl+P") 
@@ -63,7 +63,7 @@ class MainWindow(QMainWindow):
 		self.httpsicon.setPixmap(QPixmap(os.path.join('Icons', 'lock.jpg')))
 		navtb.addWidget(self.httpsicon)
 
-        # URL bar
+        	# URL bar
 		self.urlbar = QLineEdit() 
 		self.urlbar.returnPressed.connect(self.navigate_to_url) 
 
@@ -206,5 +206,5 @@ class MainWindow(QMainWindow):
 	    
 app = QApplication(sys.argv) 
 app.setApplicationName("Zeta Browser") 
-window = MainWindow()  
+window = ZetaBrowser()  
 app.exec_() 
